@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">ASP.NET</h1>
+        <p class="lead">  Rainbow School software for school management</p>
+    </section>
+
+    <div class="row">
+     <h2>   @Html.ActionLink("Classes", "Index", "Classes", new { area = "" }, new { @class = "nav-link" })</h2>
+     <h2>
+         @Html.ActionLink("Students", "Index", "Students", new { area = "" }, new { @class = "nav-link" })</h2>
+     <h2>@Html.ActionLink("Subjects", "Index", "Subjects", new { area = "" }, new { @class = "nav-link" })</h2>
+
+</div>
+</main>
